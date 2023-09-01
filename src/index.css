@@ -61,23 +61,24 @@ html {
 	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
 		0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	/* dark mode setup */
-	--backgroundColor: var(--grey-50);
-	--textColor: var(--grey-900);
 	--dark-mode-bg-color: #333;
 	--dark-mode-text-color: #f0f0f0;
+	--backgroundColor: var(--grey-50);
+	--textColor: var(--grey-900);
 	--darkModeTransition: color 0.3s ease-in-out,
 		background-color 0.3s ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--backgroundColor: var(--dark-mode-bg-color);
-		--textColor: var(--dark-mode-text-color);
-	}
-}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: var(--dark-mode-text-color);
+    --backgroundColor: var(--dark-mode-bg-color);
+  }
+} */
+
 .dark-theme {
-	--backgroundColor: var(--dark-mode-bg-color);
 	--textColor: var(--dark-mode-text-color);
+	--backgroundColor: var(--dark-mode-bg-color);
 }
 
 body {
